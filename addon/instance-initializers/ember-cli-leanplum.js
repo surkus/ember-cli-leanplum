@@ -17,12 +17,7 @@ export function initialize(appInstance) {
     if (variables)
       Leanplum.setVariables(variables);
 
-    Leanplum.start((success) => {
-      if (isDevelopmentMode) {
-        console.log('Success: ', success);
-        console.log('Variables: ', Leanplum.getVariables());
-      }
-    });
+    Leanplum.start();
   }
 }
 

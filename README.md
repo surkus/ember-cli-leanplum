@@ -1,7 +1,7 @@
 ember-cli-leanplum
 ==============================================================================
 
-[Short description of the addon.]
+Ember Cli wrapper for importing and configuring Leanplum SDK
 
 Installation
 ------------------------------------------------------------------------------
@@ -14,8 +14,38 @@ ember install ember-cli-leanplum
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+This plugin will setup Leanplum SDK and add call Leanplum.start() if the proper credentials
+are set in your environment.
 
+# /config/environment.js
+```
+leanplum: {
+  appId: "LEANPLUM_APP_ID",
+  apiKey: "LEANPLUM_API_KEY"
+}
+```
+
+It will set Leanplum.setAppIdForDevelopmentMode if set the isDevelopmentMode to true.
+
+```
+if (environment === 'development') {
+  ENV.leanplum.isDevelopmentMode = true
+  ...
+}
+```
+
+You can pass variables to Leanplum by setting them in the config.
+
+```
+ENV.leanplum.variables = {
+  items: {
+    color: 'red',
+    size: 20,
+    showBadges: true
+  },
+  showAds: true
+}
+```
 
 Contributing
 ------------------------------------------------------------------------------
