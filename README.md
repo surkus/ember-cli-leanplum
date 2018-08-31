@@ -17,8 +17,9 @@ Usage
 This plugin will setup Leanplum SDK and add call Leanplum.start() if the proper credentials
 are set in your environment.
 
-# /config/environment.js
-```
+```javascript
+// config/environment.js
+
 leanplum: {
   appId: "LEANPLUM_APP_ID",
   apiKey: "LEANPLUM_API_KEY"
@@ -27,7 +28,7 @@ leanplum: {
 
 It will set Leanplum.setAppIdForDevelopmentMode if set the isDevelopmentMode to true.
 
-```
+```javascript
 if (environment === 'development') {
   ENV.leanplum.isDevelopmentMode = true
   ...
@@ -36,7 +37,7 @@ if (environment === 'development') {
 
 You can pass variables to Leanplum by setting them in the config.
 
-```
+```javascript
 ENV.leanplum.variables = {
   items: {
     color: 'red',
