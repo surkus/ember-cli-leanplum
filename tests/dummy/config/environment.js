@@ -6,6 +6,10 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    leanplum: {
+      appId: "LEANPLUM_APP_ID",
+      apiKey: "LEANPLUM_API_KEY"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

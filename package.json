@@ -1,6 +1,6 @@
 {
-  "name": "ember-cli-leanplum",
-  "version": "1.0.0",
+  "name": "@surkus/ember-cli-leanplum",
+  "version": "1.0.1",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon",
