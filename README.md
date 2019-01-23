@@ -3,6 +3,14 @@ ember-cli-leanplum
 
 Ember Cli wrapper for importing and configuring Leanplum SDK
 
+
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
+
+
 Installation
 ------------------------------------------------------------------------------
 
