@@ -34,6 +34,18 @@ export default Service.extend({
     });
   },
 
+  setUserAttributes(userId, attributes) {
+    this.start().then(() => {
+      Leanplum.setUserAttributes(userId, attributes);
+    });
+  },
+
+  forceContentUpdate(callback) {
+    this.start().then(() => {
+      Leanplum.forceContentUpdate(callback);
+    })
+  },
+
   trackEvent(event, params) {
     this.start().then(() => {
       Leanplum.track(event, params);
